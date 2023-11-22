@@ -1,0 +1,208 @@
+* {
+    outline: 0 !important;
+}
+
+:root {
+    --titleTx: #1D1B20;
+    --primary: #FFFFFF;
+    --cardBg: #faf0e6;
+    --cardBg: #faf0e6;
+    --borderColor: #79747E;
+    --normalTx: #49454F;
+    --backgroudBg: #6750A4;
+    --mainTx: #6750A4;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 362px;
+}
+
+.card .card-container {
+    border-radius: 12px;
+    border: 1px solid var(--borderColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.card .card-header {
+    padding: 12px 4px 12px 16px;
+    align-self: stretch;
+}
+
+.card .card-header-container {
+    flex: 1 0 0;
+    display: flex;
+}
+
+.card .card-title-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+.card .card-icon {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .card-header-container .card-icon-content {
+    width: 40px;
+    height: 40px;
+    background-color: var(--backgroudBg);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.card .card-header-container .card-header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    font-style: normal;
+}
+
+.card .card-header-container .card-header-content .card-title {
+    color: var(--titleTx);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.card .card-header-container .card-header-content .card-sub-title {
+    color: var(--titleTx);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.card .card-header-container .card-menu {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .card-header-container .card-menu .card-menu-container {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.card .card-body-content {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.card .card-banner {
+    background: url(./assets/image.png), lightgray 50% / cover no-repeat;
+    width: 100%;
+    height: 188px;
+}
+
+.card .card-body-content .card-body-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.card .card-body-content .card-body-header .card-body-title {
+    color: var(--titleTx);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.card .card-body-content .card-body-header .card-body-sub-title {
+    color: var(--normalTx);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+
+}
+
+.card .card-body-content .card-description {
+    color: var(--normalTx);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.card .card-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.card .card-actions button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    border: 1px solid var(--backgroudBg);
+    border-radius: 100px;
+    padding: 10px 24px;
+}
+
+.card .card-actions .secondary-btn {
+    color: var(--mainTx);
+}
+
+.card .card-actions .primary-btn {
+    color: var(--primary);
+    background-color: var(--backgroudBg);
+}
