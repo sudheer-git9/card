@@ -25,9 +25,9 @@ body {
     align-items: center;
 }
 
-.card {
+/* .card {
     width: 362px;
-}
+} */
 
 .card .card-container {
     border-radius: 12px;
@@ -205,10 +205,4 @@ body {
 .card .card-actions .primary-btn {
     color: var(--primary);
     background-color: var(--backgroudBg);
-}
-
-@media screen and (max-width: 360px) {
-    .card {
-        width: 320px;
-    }
 }
